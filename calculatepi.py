@@ -21,4 +21,14 @@ The approximate value of pi is 3.1315929
 Note: remember that the printed value of pi will be an estimate!
 
 """
-terms = input("I will estimate pi. How
+import math
+terms = input("I will estimate pi. How many terms should I use? ")
+#decimalplaces = input("How many decimal places should I use in the result? ")
+termlist = list(range(1000))
+termlist = [(x*2+1)*(-1.0)**x for x in termlist]
+termlist = [1/x for x in termlist]
+terms = int(terms)
+termlist = termlist[0:terms]
+termlistval = sum(termlist)
+termlistvalstr = str(termlistval)
+print("The approximate value of pi is " + termlistvalstr)
