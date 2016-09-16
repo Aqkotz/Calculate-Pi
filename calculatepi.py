@@ -24,7 +24,7 @@ Note: remember that the printed value of pi will be an estimate!
 import math
 terms = input("I will estimate pi. How many terms should I use? ")
 decimalplaces = input("How many decimal places should I use in the result? ")
-termlist = list(range(10000))
+termlist = list(range(100000))
 termlist = [(x*2+1)*(-1.0)**x for x in termlist]
 termlist = [1/x for x in termlist]
 terms = int(terms)
