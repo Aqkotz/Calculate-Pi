@@ -33,7 +33,10 @@ termlistval = sum(termlist)
 pireal = 4*(termlistval)
 decimalplaces = (int(decimalplaces))
 pirem = ((10**decimalplaces)*pireal)%1
+pirem2 = ((10**(decimalplaces+1))*pireal)%1
+pirem3 = pirem2*(1/10)
+pirem4 = (pirem-pirem3)*10
 pibig = ((10**decimalplaces)*pireal)-pirem
 pi = pibig/(10**decimalplaces)
-pistr = str(pi)
+pistr = str(pirem3)
 print("The approximate value of pi is " + pistr)
