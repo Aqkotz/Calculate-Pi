@@ -42,8 +42,3 @@ if pirem4 >= 5.0:
 pi = pibig/(10**decimalplaces)
 pistr = str(pi)
 print("The approximate value of pi is " + pistr)
-print(pirem2)
-print(pirem3)
-print(pirem4)
-print(pireal)
-print(pibig)
